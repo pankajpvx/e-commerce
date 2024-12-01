@@ -1,0 +1,46 @@
+.product-rating-container {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.fullStar {
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.emptyStar {
+  color: #d1d5db;
+}
+
+.partialStarContainer {
+  position: relative;
+}
+
+.partialStarOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #fbbf24;
+  fill: currentColor;
+}
+
+.ratingText {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.totalRatings {
+  margin-inline: 5px;
+  font-size: 14px;
+  color: #6b7280;
+}
