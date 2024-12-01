@@ -28,6 +28,8 @@ const ProductDetails = () => {
     getProductDetails();
   }, [id]);
 
+  const AddToCart = () => {};
+
   if (!loader && product)
     return (
       <section className="container product-details">
@@ -46,7 +48,9 @@ const ProductDetails = () => {
             <p className="price">
               <span className="priceValue">${product?.price.toFixed(2)}</span>
             </p>
-            <button className="add-card-btn">Add to Cart </button>
+            <button onClick={AddToCart} className="add-card-btn">
+              Add to Cart
+            </button>
           </div>
         </div>
       </section>

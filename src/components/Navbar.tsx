@@ -1,11 +1,14 @@
+import { Link } from "react-router";
 import CartSvg from "../svgs/cartSvg";
 
-const Navbar = () => {
+const Navbar = ({ setIsCartOpen }) => {
   return (
     <nav className="container navbar flex">
-      <div className="left-side">E-commerce</div>
+      <Link to="/" className="left-side">
+        E-commerce
+      </Link>
       <div className="tabs">
-        <div className="icon-box">
+        <div className="icon-box" onClick={() => setIsCartOpen(true)}>
           <CartSvg />
           {/* <div className="cart-item-count">100</div> */}
         </div>
